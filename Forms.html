@@ -10,14 +10,37 @@
 <!-- action: where the form sends data to
 Method: HTTP method (get / post) -->
 
+<form action = "http://wikipedia.org" method = "get"> <!-- This tells the button to retrieve this link -->
+	<label> <!-- labels add a lable to the input boxes -->
+		Username:
+		<input type="text" placeholder="Username">
+	</label>
+	
+	<label>
+		Password:
+		<input type="password" placeholder="Password">
+	</label>
+
+	<button>Submit</button>
+	<input type="submit">
+
+</form>
+
+<!-- Using Labels -->
+
 <form action = "http://wikipedia.org" method = "get"> 
-	<!-- This tells the button to retrieve this link -->
-	<input type="text" placeholder="Username">
-	<!-- <input type="color" >
-	<input type="radio"> -->
-	<input type="password" placeholder="Password">
+	<label for = "Email">Email:</label>
+	<input id ="username" type="email" placeholder="Username" required="true"> 
+	<!-- Notice that 'require' makes it so that there must be an input -->
+	</label>
+	
+	<label for = "password"> Password:</label>
+	<input id = "password" type="password" placeholder="Password" required="true">
+	</label>
+
 	<button>Submit</button>
 	<input type="submit">
 </form>
+
 </body>
 </html>
