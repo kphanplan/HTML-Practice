@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inputs Demo</title>
+</head>
+<body>
+
+<p><h1>Cats or dogs?</h1></p>
+
+<form>
+	<label for = "cats"> Cats: </label>
+	<input id = "cats" type="radio" name="Pet" value = "cat"> 
+	
+
+	<p>
+	<label for = "dogs"> Dogs: </label>
+	<input id = "dogs" type="radio" name="Pet" value = "dog">
+	</p>
+
+<p><h1>What's your Favorite Color?</h1></p>
+
+<select name = "color" required="true">
+	<option value = "y">Yellow</option>
+	<option value = "r">Red</option>
+	<option value = "b">Blue</option>
+	<option value = "o">Orange</option>
+</select>
+
+<p> Tell us a story!</p>
+
+<textarea rows = "5" cols="20" name = "feedback" value = "fed" required="true"> </textarea>
+
+<button>Submit</button>
+
+</form>
+</body>
+</html>
+
+<!-- Using 'name' here connects them, restricting us to only picking one. 
+	Notice that "value" also registers the choice made, found in URL. Every value needs a name.
+	For label + input format: label for = "xyz", input id = "xyz"
+	'Select' tag allows the user to make a dropdown menu. Each option is in 'option' tag
+	Text area tag gives a larger area than the "text" input
+-->
